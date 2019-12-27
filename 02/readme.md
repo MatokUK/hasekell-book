@@ -18,7 +18,7 @@ Parenthesise the following numeric expressions:
 ```
 ---
 
-### 3
+### 03
 
 The script below contains three syntactic errors. Correct these errors and then check
 that your script works properly.
@@ -36,7 +36,7 @@ N = a 'div' length xs
 ---
 
 
-### 4
+### 04
 The library function `last` selects the last element of non-empty list. Show how
 the function `last` could be defined in terms of the other library functions introduced in this chapter.
 
@@ -45,7 +45,7 @@ defined `last'`
 
 ---
 
-### 5
+### 05
 The library function `init` removes the last element from non-empty list; 
 (`init [1,2,3,4,5] = [1,2,3,4]`)  Show how `init` could similarly be in two different ways.
   
