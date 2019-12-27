@@ -30,6 +30,20 @@ and show using your definition that `product [2,3,4] = 24`.
 #### Solution
 defined `product' :: Num a => [a] -> a`
 
+```
+    product [2,3,4]
+=        { applying product }
+    2 * product [3,4]
+=        { applying product }
+    2 * 3 * product [4]
+=        { applying product }
+    2 * 3 * 4 * product [] 
+=        { applying product }
+    2 * 3 * 4 * 1
+=        { applying * }
+    24
+```
+
 ---
 
 ### 04
