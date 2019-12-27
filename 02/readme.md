@@ -33,6 +33,8 @@ N = a 'div' length xs
 
 #### Solution
 
+defined in **fixed_script.hs**
+
 ---
 
 
