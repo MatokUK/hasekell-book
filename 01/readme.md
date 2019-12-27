@@ -4,6 +4,19 @@
 
 Give another possible calculation fro the result of `double (double 2)`.
 
+#### Solution
+```
+    double (double 2)
+=      { applying inner double }
+    double (2 + 2)
+=      { applying outer double }
+    (2 + 2) + (2 + 2)
+=      { applying + }
+    4 + 4
+=      { applying + }
+    8
+```
+
 ---
 
 ### 02
