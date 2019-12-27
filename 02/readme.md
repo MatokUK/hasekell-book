@@ -41,7 +41,7 @@ The library function `last` selects the last element of non-empty list. Show how
 the function `last` could be defined in terms of the other library functions introduced in this chapter.
 
 #### Solution
-defined `last'`
+defined `last'` in **last.hs**
 
 ---
 
