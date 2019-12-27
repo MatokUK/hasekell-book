@@ -11,6 +11,16 @@ What are the types of the following values?
 [tail, init, reverse]
 ```
 
+#### Solution
+
+```
+['a', 'b', 'c'] :: [Char]
+('a', 'b', 'c') :: (Char, Char, Char)
+[(False, '0'), (True, '1')] :: [(Bool, Char)]
+([False, True], ['0', '1']) :: ([Bool], [Char])
+[tail, init, reverse] :: :: [[a] -> [a]]
+```
+
 ---
 ### 02
 Write down definitions that have the following types; it does not matter what the
