@@ -52,9 +52,22 @@ twice f x = f (f x)
 Hint: take case to include the necessary class constraints in the types if 
 the functions are defined using overloaded operators.
 
+#### Solution
+```
+second :: [a] -> a
+swap :: (a, b) -> (b, a)
+pair :: b -> a -> (a, b)
+double :: Num a => a -> a
+palindrome :: Eq a => [a] -> Bool
+twice :: (a -> a) -> a -> a
+```
+---
+
 ### 04
 
 Check your answers to the preceding three questions using GHCi.
+
+---
 
 ### 05
 
