@@ -1,3 +1,3 @@
 # Haskell
 
-[ssf](./01/readme.md)
+[Intro](./01/readme.md)
