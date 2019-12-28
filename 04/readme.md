@@ -8,6 +8,10 @@ Using library functions, define
 
 that splits an even-lenghted list into two halves
 
+#### Solution:
+
+Defined `halve` in **solution.hs**
+
 ---
 
 ### 02
@@ -21,6 +25,9 @@ that returns the third element in a list that contains at least this many elemen
 2. list indexing `!!`
 3. pattern matching
 
+#### Solution:
+
+Defined `third1`, `third2` and `third3` in **solution.hs**
 ---
 
 ### 03
@@ -43,8 +50,25 @@ Defined `safetail1`, `safetail2` and `safetail3` in **solution.hs**
 
 ### 04
 
-In a similar way to `&&` in section 4.4 show the disjunction operator `||` can be defined in four diffrent ways using pattern matching.
+In a similar way to `&&` in section 4.4 show the disjunction operator `||` can be 
+defined in four different ways using pattern matching.
 
+#### Solution:
+```
+True || True = True
+True || False = True
+False || True = True
+False || False = False 
+
+False || b = b
+True || _ = True
+
+a || False = a
+_ || True = True
+
+False || False = False
+_ || _ = True
+```
 ---
 
 ### 05
@@ -60,6 +84,10 @@ _    &&    _ = False
 
 Hint: use two nested condition expressions.
 
+#### Solution:
+```
+conjunction1 a b = if a then (if b then True else False) else False
+```
 ---
 
 ### 06
@@ -72,6 +100,10 @@ True  && b = b
 False && _ = False
 ```
 
+#### Solution:
+```
+conjunction2 a b = if a then b else False
+```
 ---
 
 ### 07
