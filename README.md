@@ -9,3 +9,5 @@
 04 [Defining Functions](./04/readme.md)
 
 05 [List Comprehensions](./05/readme.md)
+
+06 [Recursive Functions](./06/readme.md)
