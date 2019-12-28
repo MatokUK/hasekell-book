@@ -21,6 +21,7 @@ that returns the third element in a list that contains at least this many elemen
 2. list indexing `!!`
 3. pattern matching
 
+---
 
 ### 03
 
@@ -34,16 +35,22 @@ Unis `tail` and the function `null ::[a] -> Bool` that decides if a list empty o
 2. guard equation
 3. pattern matching
 
+#### Solution:
+
+Defined `safetail1`, `safetail2` and `safetail3` in **solution.hs**
+
+---
+
 ### 04
 
-In a similar wat to && in section 4.4 show the disjunction operator || can be defined in four diffrent ways using pattern matching.
+In a similar way to `&&` in section 4.4 show the disjunction operator `||` can be defined in four diffrent ways using pattern matching.
 
 ---
 
 ### 05
 
 Without using any other library functions or operators, show how the meaning of the
-following pattern matching definition for logical conjuction `&&` can be formalised
+following pattern matching definition for logical conjunction `&&` can be formalised
 using condition expressions:
 
 ```
