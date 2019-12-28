@@ -31,6 +31,7 @@ For example:
 ```
 
 #### Solution
+Defined `grid'` in **solution.hs**
 
 ---
 
@@ -47,6 +48,7 @@ For example:
 ```
 
 #### Solution
+Defined `square'` in **solution.hs**
 
 ---
 
@@ -91,6 +93,7 @@ of all perfect numbers up to a given limit. For example:
 [6,28,496]
 ```
 #### Solution
+Defined `perfect` in **solution.hs**
 
 ---
 
@@ -107,6 +110,12 @@ library function `concat :: [[a]] -> [a]`
 Redefine the function `positions` using the function `find`.
 
 #### Solution
+Defined `positions` in **solution.hs**
+
+```
+> positions False [True, False, True, False]
+[1,3]
+```
 
 ---
 
