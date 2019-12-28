@@ -1,6 +1,6 @@
-# Function
+# Defining Functions
 
-### 1
+### 01
 
 Using library functions, define
 
@@ -8,7 +8,9 @@ Using library functions, define
 
 that splits an even-lenghted list into two halves
 
-### 2
+---
+
+### 02
 
 Define a function
 
@@ -20,7 +22,7 @@ that returns the third element in a list that contains at least this many elemen
 3. pattern matching
 
 
-### 3
+### 03
 
 Consider a function 
 
@@ -32,11 +34,13 @@ Unis `tail` and the function `null ::[a] -> Bool` that decides if a list empty o
 2. guard equation
 3. pattern matching
 
-### 4
+### 04
 
 In a similar wat to && in section 4.4 show the disjunction operator || can be defined in four diffrent ways using pattern matching.
 
-### 5
+---
+
+### 05
 
 Without using any other library functions or operators, show how the meaning of the
 following pattern matching definition for logical conjuction `&&` can be formalised
@@ -49,7 +53,9 @@ _    &&    _ = False
 
 Hint: use two nested condition expressions.
 
-### 6
+---
+
+### 06
 
 Do the same for the following alternative definitions, and note the difference in the number
 of conditional expressions that are required.
@@ -59,7 +65,9 @@ True  && b = b
 False && _ = False
 ```
 
-### 7
+---
+
+### 07
 
 Show how the meaning of the following curried function definition can be formalised
 in terms of lambda expressions:
