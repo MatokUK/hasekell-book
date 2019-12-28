@@ -7,7 +7,7 @@ Check The Code Book [7]
 
 ### 01
 Using a list comprehensions, give an expression that calculated the sum
-1^2 + 2^2 + ... 100^2 of the first one hundred integer squares.
+1<sup>2</sup> + 2<sup>2</sup> + ... 100<sup>2</sup> of the first one hundred integer squares.
 
 #### Solution
 
@@ -19,10 +19,10 @@ sum [ x^2 | x <- [1..100] ]
 
 ### 02
 
-Suppose that a coordinate grid of size m x n is given ny the list of
+Suppose that a coordinate grid of size m x n is given by the list of
 all pairs (x,y) of integers such that 0 <= x <= m and 0 <= y <= n.
 Using a list comprehensions, define a function
-`grid :: Int -> Int -> [(Intm Int)]` that returns a coordinate grid of a given size.
+`grid :: Int -> Int -> [(Int, Int)]` that returns a coordinate grid of a given size.
 For example:
 
 ```
@@ -61,6 +61,7 @@ using a list comprehensions. For example:
 [True,True,True]
 ```
 #### Solution
+Defined `replicate'` in **solution.hs**
 
 ---
 ### 05
@@ -77,6 +78,7 @@ whose components are at most a given limit. For example:
 ```
 
 #### Solution
+Defined `pyths` in **solution.hs**
 
 ---
 ### 06
