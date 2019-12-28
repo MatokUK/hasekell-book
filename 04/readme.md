@@ -28,6 +28,7 @@ that returns the third element in a list that contains at least this many elemen
 #### Solution:
 
 Defined `third1`, `third2` and `third3` in **solution.hs**
+
 ---
 
 ### 03
@@ -117,3 +118,7 @@ mult x y z = x*y*z
 ```
 
 #### Solution:
+
+```
+(\a -> (\b -> (\c -> a + b + c))) 2 3 1
+```

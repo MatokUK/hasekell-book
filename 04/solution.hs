@@ -27,3 +27,10 @@ safetail2 xs | null xs = xs
 safetail3 :: [a] -> [a]
 safetail3 [] = []
 safetail3 xs = tail xs
+
+-- 05:
+conjunction1 a b = if a then (if b then True else False) else False
+
+
+-- 06:
+conjunction2 a b = if a then b else False
