@@ -11,3 +11,5 @@
 05 [List Comprehensions](./05/readme.md)
 
 06 [Recursive Functions](./06/readme.md)
+
+07 [Higher-Order Functions](./07/readme.md)
