@@ -21,9 +21,9 @@ and' [] = True
 and' (False:bs) = False
 and' (_:bs) = and' bs
 
---concat' :: [[a]] -> [a]
---concat' (x:[]) = x
---concat' (x:xs) = x : concat' [xs]
+concat' :: [[a]] -> [a]
+concat' (x:[]) = x
+concat' (x:xs) = x ++ concat' xs
 
 replicate' :: Int -> a -> [a]
 replicate' 0 _ = []

@@ -101,7 +101,7 @@ Using the recursive definitions given in this chapter, show how
 ```
 
 ---
-### 06
+### 06 ☑
 Without looking at the definitions from the standard prelude define the following
 library functions on lists using recursion.
 
@@ -125,6 +125,9 @@ e. Decide if a value is an element of a list:
 
 `elem :: Eq a => a -> [a] -> Bool`
 
+#### Solution
+defined `and'`, `concat'`, `replicate'`, `nth` and `elem'` in **solution.hs**
+
 ---
 ### 07 ☑
 Define a recursive function `merge :: Ord a => [a] -> [a] -> [a]` that 
@@ -139,7 +142,7 @@ Note: your definition should not use other functions on sorted lists such as
 `isert` or `isort`, but should be defined using explicit recursion.
 
 ---
-### 08
+### 08 ☑
 Using `merge` define a function `msort :: Ord a => [a] -> [a]` that implements 
 _merge sort_, in which the empty list and singleton list are already sorted,
 and any other list is sorted by merging together the two lists that result
