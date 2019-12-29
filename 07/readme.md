@@ -1,7 +1,7 @@
 # Higher-Order Functions
 
 ### 01
-Show how the list comprehensions `[f x | x <- xs, px]` can be re-expressed using
+Show how the list comprehensions `[f x | x <- xs, p x]` can be re-expressed using
 the higher-order functions `map` and `filter`.
 
 ### 02
