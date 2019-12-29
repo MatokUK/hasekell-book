@@ -134,6 +134,7 @@ scalar product of two lists. For example:
 ```
 
 #### Solution
+Defined `scalarproduct` in **solution.hs**
 
 ---
 
