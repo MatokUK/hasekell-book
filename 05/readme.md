@@ -138,7 +138,10 @@ Defined `scalarproduct` in **solution.hs**
 
 ---
 
-### 10 ☠
+### 10
 Modify the Caesar cipher program to also handle upper-case letters.
+
+#### Solution
+Defined `caesar` in **caesar.hs**
 
 
