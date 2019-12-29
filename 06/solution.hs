@@ -45,3 +45,15 @@ merge as [] = as
 merge (a:as) (b:bs) | a < b = a : merge as (b:bs)
                     | otherwise = b : merge (a:as) bs
 
+-- 08:
+halve :: [a] -> ([a],[a])
+halve xs = (take n xs, drop n xs)
+    where n = length xs `div` 2
+
+msort :: Ord a => [a] -> [a]
+msort [] = []
+msort [x] = [x]
+msort xs = merge (msort left) (msort right)
+    where h = halve xs
+          left = fst h
+          right = snd h

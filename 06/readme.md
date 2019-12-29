@@ -126,7 +126,7 @@ e. Decide if a value is an element of a list:
 `elem :: Eq a => a -> [a] -> Bool`
 
 ---
-### 07
+### 07 ☑
 Define a recursive function `merge :: Ord a => [a] -> [a] -> [a]` that 
 merges two sorted lists to give a single sorted list. For example:
 
