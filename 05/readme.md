@@ -97,7 +97,7 @@ Defined `perfect` in **solution.hs**
 
 ---
 
-### 07
+### 07 ☠
 Show how the list comprehensions `[(x,y) | x <- [1,2], y <- [3,4]]` with
 two generators can be re-expressed using two comprehensions with single
 generator.
@@ -120,10 +120,24 @@ Defined `positions` in **solution.hs**
 ---
 
 ### 09
+The _scalar product_ of two lists of integers _xs_ and _ys_ of length _n_ is
+given by the sum of the products of corresponding integers:
+
+SUM[i = 0..n-1] (xs<sub>i</sub> * ys<sub>i</sub>)
+
+In similar manner to `chisqr`, show how a list comprehensions can be used to
+define a function `scalarproduct :: [Int] -> [Int] -> Int` that returns the 
+scalar product of two lists. For example:
+```
+> scalarproduct [1,2,3] [4,5,6] 
+32
+```
+
+#### Solution
 
 ---
 
-### 10
+### 10 ☠
 Modify the Caesar cipher program to also handle upper-case letters.
 
 
