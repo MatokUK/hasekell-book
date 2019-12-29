@@ -3,6 +3,11 @@ sumdown :: Int -> Int
 sumdown 0 = 0
 sumdown n = n + sumdown (n-1)
 
+-- 03:
+pow :: Integral a => a -> a -> a
+pow _ 0 = 1
+pow n x = n * pow n (x-1)
+
 -- 04:
 euclid :: Int -> Int -> Int
 euclid a b | a == b = a

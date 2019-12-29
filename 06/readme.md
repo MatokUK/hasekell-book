@@ -1,9 +1,19 @@
 # Recursive Functions
 
-### 01
+### 01 ☑
 How does the recursive version of the factorial function behave if applied
 to a negative argument, such as (-1)? Modify the definition to prohibit
 negative arguments by adding a guard to the recursive case.
+
+#### Solution
+
+Original behaviour: stuck in infinite recursion
+```
+fac :: Int -> Int
+fac 0 = 1
+fac n | n < 0 = 0
+      | otherwise = n * fac (n-1)
+```
 
 ---
 ### 02 ☑
@@ -12,10 +22,27 @@ integers from a given value down to zero. For example, `sumdown 3` should
 return the result `3+2+1+0 = 6`.
 
 ---
-### 03
+### 03 ☑
 Define the exponentiation operator `^` for non-negative integers using the same
 pattern of recursion as the multiplication operator `*`, and show how the expression
 `2^3` is evaluated using your definition.
+
+#### Solution
+```
+    2^3
+=      { applying ^ }
+    2 * 2^2
+=      { applying ^ }
+    2 * 2 * 2^1
+=      { applying ^ }
+    2 * 2 * 2 * 2^0
+=      { applying ^ }
+    2 * 2 * 2 * 1
+=      { applying * }
+    8
+```
+
+defined `pow`
 
 ---
 ### 04 ☑
@@ -30,9 +57,48 @@ number is subtracted from the larger, and the same process is then repeated. For
 ```
 
 ---
-### 05
+### 05 ☑
 Using the recursive definitions given in this chapter, show how 
 `length [1,2,3]`, `drop 3 [1,2,3,4,5]` and `init [1,2,3]` are evaluated.
+
+#### Solution
+```
+    length [1,2,3]
+=      { applying length }
+    1 + length [2,3]
+=      { applying length }
+    1 + 1 + length [3]
+=      { applying length }
+    1 + 1 + 1 + length []
+=      { applying length }
+    1 + 1 + 1 + 0
+=      { applying + }
+    3
+```
+
+```
+    drop 3 [1,2,3,4,5]
+=      { applying drop }
+    drop 2 [2,3,4,5]
+=      { applying drop }
+    drop 1 [3,4,5]
+=      { applying drop }
+    drop 0 [4,5]
+=      { applying drop }
+    [4,5]
+```
+
+```
+    init [1,2,3]
+=      { applying init }
+    1 : init [2,3]
+=      { applying init }
+    1 : 2 : init [3]
+=      { applying init }
+    1 : 2 : []
+=      { applying : }
+    [1,2]    
+```
 
 ---
 ### 06
