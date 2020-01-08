@@ -13,3 +13,5 @@
 06 [Recursive Functions](./06/readme.md)
 
 07 [Higher-Order Functions](./07/readme.md)
+
+08 [Declaring types and classes](./08/readme.md)

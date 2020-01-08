@@ -1,3 +1,5 @@
+# Declaring types and classes
+
 ### 01
 In similar manner to the function `add`, define a recursive multiplication function
 `mul :: Nat -> Nat -> Nat` for the recursive type of natural numbers:
