@@ -11,3 +11,17 @@ curry' f x y = f (x,y)
 
 uncurry' :: (a -> b -> c) -> (a,b) -> c
 uncurry' f (x,y) = f x y
+
+-- 06:
+unfold p h t x | p x = []
+               | otherwise = h x : unfold p h t (t x) 
+
+data Bit = Int
+chop8_unfold :: [Bit] -> [[Bit]]
+chop8_unfold = unfold null (take 8) (drop 8)
+
+map_unfold :: (a -> b) -> [a] -> [b]
+map_unfold f xs = unfold null (f.head) (tail) xs
+
+interate_unfold :: (a -> a) -> a -> [a]
+interate_unfold f x = unfold (\x -> False) (id) (f) x
