@@ -94,3 +94,6 @@ about order. For example:
 > altMap (+10) (+100) [0,1,2,3,4]
 [10,101,12,103,14]  
 ```
+
+### 10
+Using `alMap`, define a function `luhn :: [Int] -> Bool` that implements _Luhn algorithm_ for bank card numbers of any length.
