@@ -25,3 +25,7 @@ map_unfold f xs = unfold null (f.head) (tail) xs
 
 interate_unfold :: (a -> a) -> a -> [a]
 interate_unfold f x = unfold (\x -> False) (id) (f) x
+
+-- 09:
+altMap :: (a -> b) -> (a -> b) -> [a] -> [b]
+altMap m n xs = [ if (k `mod` 2 == 1) then m v else n v | (v, k) <- zip xs [1..]]
