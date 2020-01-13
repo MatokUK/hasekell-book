@@ -33,3 +33,12 @@ conjunction1 a b = if a then (if b then True else False) else False
 
 -- 06:
 conjunction2 a b = if a then b else False
+
+-- 08:
+luhnDouble :: Int -> Int
+luhnDouble n | n > 4 = n*2 - 9
+             | otherwise = n*2
+
+
+luhn :: Int -> Int -> Int -> Int -> Bool
+luhn a b c d = sum [luhnDouble a, b, luhnDouble c, d ] `mod` 10 == 0

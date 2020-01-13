@@ -136,7 +136,7 @@ mistyping a digit, and proceeds as follows:
 * if total os divisible by 10, the card number is valid.
 
 Define a function `luhnDouble :: Int -> Int` that doubles a digit and subtracts 9
-if the result is greter than 9. For example:
+if the result is greater than 9. For example:
 
 ```
 > luhnDouble 3
