@@ -1,7 +1,5 @@
 # Defining Functions
 
-# TODO 8 is unsolved
-
 ### 01
 
 Using library functions, define
@@ -125,7 +123,7 @@ mult x y z = x*y*z
 (\a -> (\b -> (\c -> a + b + c))) 2 3 1
 ```
 ---
-### 08
+### 08 ☑
 The _Luhn algorithm_ is used to check card numbers for simple errors such as 
 mistyping a digit, and proceeds as follows:
 
