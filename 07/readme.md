@@ -59,14 +59,14 @@ unfold p h t x | p x = []
 ```
 
 That is, the function `unfold p h t` produces the empty list if the predicate `p`
-is true of the argument value, and otherwise produces a non-empty list by
+is **true** of the argument value, and otherwise produces a non-empty list by
 applying the function `h` to this value to give the head, and the function `t`
 to generate another argument that is recursively processed in the same way
 to produce the tail of the list. For example, the function `int2bin` can
 be rewritten more compactly using `unfold` as follows:
 
 ```
-int2bin = unfols (==0) (`mod` 2) (`div` 2)
+int2bin = unfold (==0) (`mod` 2) (`div` 2)
 ```
 
 Redefine the function `chop8`, `map f` and `iterate f` using `unfold`.
@@ -94,3 +94,6 @@ about order. For example:
 > altMap (+10) (+100) [0,1,2,3,4]
 [10,101,12,103,14]  
 ```
+
+### 10
+Using `alMap`, define a function `luhn :: [Int] -> Bool` that implements _Luhn algorithm_ for bank card numbers of any length.
