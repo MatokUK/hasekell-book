@@ -8,6 +8,7 @@ the higher-order functions `map` and `filter`.
 ```
 map (f) (filter (p) xs)
 ```
+---
 
 ### 02
 Without looking at the definitions from the standard prelude, define the following
@@ -29,8 +30,12 @@ d. Remove elements from a list while they satisfy a predicate:
 
 `dropWhile :: (a -> Bool) -> [a] -> [a]`
 
+---
+
 ### 03
 Redefine the function `map f` and `filter p` using `foldr`.
+
+---
 
 ### 04 ☑
 Using `foldl`, define a function `dec2int :: [Int] -> Int` that converts a
@@ -50,7 +55,7 @@ two arguments into a function on pairs.
 Hint: first write down the type of the two functions.
 
 ### 06
-A higher-order function `unfold` that encapsulates a simple pattern of reccursion
+A higher-order function `unfold` that encapsulates a simple pattern of recursion
 for producing a list can be defined as follows:
 
 ```
@@ -71,6 +76,12 @@ int2bin = unfold (==0) (`mod` 2) (`div` 2)
 
 Redefine the function `chop8`, `map f` and `iterate f` using `unfold`.
 
+#### Solution
+
+Defined: `chop8_unfold`, `map_unfold` and `interate_unfold`.
+
+---
+
 ### 07
 Modify the binary string transmitter example to detect simple transmissions errors
 using the concept of parity bits. That is, each eight-bit binary number produced
@@ -85,7 +96,7 @@ Test your new string transmitter program from the previous exercise using a faul
 communication channel that forgets  the first bit, which can be modeled using
 using the `tail` function on lists of bits.
 
-### 09
+### 09 ☑
 Define a function `altMap :: (a -> b) -> (a -> b) -> [a] -> [b]` that alternately 
 applies its two argument functions to successive elements in a list, in turn
 about order. For example:
@@ -95,5 +106,5 @@ about order. For example:
 [10,101,12,103,14]  
 ```
 
-### 10
+### 10 ☑
 Using `alMap`, define a function `luhn :: [Int] -> Bool` that implements _Luhn algorithm_ for bank card numbers of any length.

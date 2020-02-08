@@ -1,6 +1,17 @@
 all' :: (a -> Bool) -> [a] -> Bool
 all' p xs = and (map (p) xs)
 
+-- any' :: (a -> Bool) -> [a] -> Bool
+-- any' p  xs = or  (map (p) xs)
+
+takeWhile' :: (a -> Bool) -> [a] -> [a]
+takeWhile' f [] = []
+takeWhile' f (x:xs) = if f x then x : takeWhile' f xs else []
+
+dropWhile' :: (a -> Bool) -> [a] -> [a]
+dropWhile' f [] = []
+dropWhile' f (x:xs) = if f x then dropWhile' f xs else x:xs
+
 -- 03:
 map_foldr :: (a -> b) -> [a] -> [b]
 map_foldr f xs = foldr (\x xs -> f x : xs) [] xs
@@ -36,3 +47,11 @@ interate_unfold f x = unfold (\x -> False) (id) (f) x
 -- 09:
 altMap :: (a -> b) -> (a -> b) -> [a] -> [b]
 altMap m n xs = [ if (k `mod` 2 == 1) then m v else n v | (v, k) <- zip xs [1..]]
+
+-- 10:
+luhnDouble :: Int -> Int
+luhnDouble n | n > 4 = n*2 - 9
+             | otherwise = n*2
+
+luhn :: [Int] -> Bool
+luhn xs = sum (altMap luhnDouble id xs) `mod` 10 == 0
