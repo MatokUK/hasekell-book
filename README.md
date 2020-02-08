@@ -15,3 +15,9 @@
 07 [Higher-Order Functions](./07/readme.md)
 
 08 [Declaring types and classes](./08/readme.md)
+
+09
+
+10 [Interactive programming](./10/readme.md)
+
+11 [Unbeatable Tic-Tac-Toe](./11/readme.md)
