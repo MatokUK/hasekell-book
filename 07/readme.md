@@ -91,10 +91,14 @@ number consumed during decoding is checked to ensure that its parity bit is corr
 with the parity bit being discarded if is the case, and a parity error being reported
 otherwise.
 
+---
+
 ### 08
 Test your new string transmitter program from the previous exercise using a faulty 
 communication channel that forgets  the first bit, which can be modeled using
 using the `tail` function on lists of bits.
+
+---
 
 ### 09 ☑
 Define a function `altMap :: (a -> b) -> (a -> b) -> [a] -> [b]` that alternately 
