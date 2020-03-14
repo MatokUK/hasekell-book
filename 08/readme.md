@@ -35,7 +35,7 @@ Defined `occurs` in **solution.hs**
 
 ---
 
-### 03
+### 03 ☑
 Consider the following type of binary trees:
 ```
 data Tree a = Leaf a | Node (Tree a) (Tree a)
@@ -47,16 +47,24 @@ balanced or not.
 
 Hint: first define a function that returns the number of leaves in a tree.
 
+#### Solution
+Defined `balanced` in **solution3.hs**
+
 ---
 
-### 04
+### 04 ☑
 Define a function `balance :: [a] -> Tree a` that convert a non-empty list into a 
 balanced tree.
+
 Hint: first define a function that splits a list into two halves whose length differs by at most one.
+
+#### Solution
+
+Defined `balance` in **solution3.hs**
 
 ---
 
-### 05
+### 05 ☑
 Given the type declaration
 
 ```
@@ -72,12 +80,20 @@ folde :: (Int -> a) -> (a -> a -> a) -> Expr -> a
 such that `folde f g` replaces each `Val` constructor in an expression by the
 function `f`, and each `Add` constructor by the function `g`.
 
+#### Solution
+
+Defined `folde` in **folde.hs**
+
 ---
 
 ### 06
 Using `folde`, define a function `eval :: Expr -> Int` that evaluates an expression
 to an integer value, and a function `size :: Expr -> Int` that calculates the number 
 of values in an expression.   
+
+#### Solution
+
+Defined `eval` and `size` in **folde.hs**
 
 ---
 
@@ -92,7 +108,7 @@ instance Eq a => Eq [a] where
 ---
 
 ### 08
-Extend the tautology checker to support the use of logical disjunction `` and equivalence in propositions.
+Extend the tautology checker to support the use of logical disjunction `∨` and equivalence `⇔` in propositions.
 
 ---
 

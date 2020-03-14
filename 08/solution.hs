@@ -27,8 +27,3 @@ occurs x (Node l y r) = case compare x y of
                       LT -> occurs x l
 
 
-
--- 04:
-
-
-
