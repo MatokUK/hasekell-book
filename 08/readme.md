@@ -20,7 +20,7 @@ together with a function
 ```
 compare :: Ord a => a -> a -> Ordering
 ```
-that decides if one value in an ordered type is less than (LT), equal to (`EQ`),
+that decides if one value in an ordered type is less than (`LT`), equal to (`EQ`),
 or greater than (`GT`) another value. Using this function, redefine the function
 ```
 occures :: Ord a => a -> Tree a -> Bool
@@ -30,14 +30,16 @@ for search trees. Why is this new definition more efficient than the original ve
 ---
 
 ### 03
-Consider o following type of binary trees:
+Consider the following type of binary trees:
 ```
 data Tree a = Leaf a | Node (Tree a) (Tree a)
 ```
 Let us say that such a tree is _balanced_ if the number of leaves in the left 
 and right subtree of every node differs by at most one, with leaves themselves
-being trivially balanced. Define a function `` that decides if a binary tree is 
+being trivially balanced. Define a function `balanced :: Tree a -> Bool` that decides if a binary tree is 
 balanced or not. 
+
+Hint: first define a function that returns the number of leaves in a tree.
 
 ---
 
