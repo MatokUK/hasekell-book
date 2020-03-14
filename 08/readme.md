@@ -1,14 +1,17 @@
 # Declaring types and classes
 
-### 01
+### 01 ☑
 In similar manner to the function `add`, define a recursive multiplication function
 `mul :: Nat -> Nat -> Nat` for the recursive type of natural numbers:
 
 Hint: make use of `add` in your definition.
 
+#### Solution
+Defined `mul` in **solution.hs**
+
 ---
 
-### 02
+### 02 ☑
 Although not included in appendix B, the standard prelude defines
 
 ```
@@ -26,6 +29,9 @@ or greater than (`GT`) another value. Using this function, redefine the function
 occures :: Ord a => a -> Tree a -> Bool
 ```
 for search trees. Why is this new definition more efficient than the original version?
+
+#### Solution
+Defined `occurs` in **solution.hs**
 
 ---
 

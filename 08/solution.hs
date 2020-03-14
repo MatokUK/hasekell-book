@@ -14,31 +14,19 @@ add m n = int2nat (nat2int m + nat2int n)
 
 mul :: Nat -> Nat -> Nat
 mul _ Zero = Zero
-mul Zero _ = Zero
-mul (Succ Zero) b = b
-mul a (Succ Zero) = a
-mul a b = add a (mul a prev_b)
-  where prev_b = int2nat ((nat2int b) - 1)
+mul a (Succ b) = add a (mul a b)
 
 -- 02:
 data Tree a = Leaf a | Node (Tree a) a (Tree a)
 
 occurs :: Ord a => a -> Tree a -> Bool
 occurs x (Leaf y) = x == y
-occurs x (Node l y r) | x == y = True
-                      | x > y = occurs x l
-                      | x < y = occurs x r
+occurs x (Node l y r) = case compare x y of
+                      EQ -> True
+                      GT -> occurs x r
+                      LT -> occurs x l
 
--- 03:
-data Tree3 a = Leaf3 a | Node3 (Tree3 a) (Tree3 a)
 
-nodes :: Tree3 a -> Int
-nodes (Leaf3 x) = 0
-nodes (Node3 l r) = 1 + max (nodes l) (nodes r)
-
-balanced :: Tree3 a -> Bool
-balanced (Leaf3 x) = True
-balanced (Node3 l r) = abs (nodes l - nodes r) <= 1
 
 -- 04:
 
