@@ -128,3 +128,7 @@ Extend the tautology checker to support the use of logical disjunction `∨` and
 
 ### 09
 Extend the abstract machine to support the use of multiplication.
+
+#### Solution
+
+Defined in **machina.hs**
