@@ -86,7 +86,7 @@ Defined `folde` in **folde.hs**
 
 ---
 
-### 06
+### 06 ☑
 Using `folde`, define a function `eval :: Expr -> Int` that evaluates an expression
 to an integer value, and a function `size :: Expr -> Int` that calculates the number 
 of values in an expression.   
@@ -97,12 +97,26 @@ Defined `eval` and `size` in **folde.hs**
 
 ---
 
-### 07
+### 07 ☑
 Complete the following instance declarations:
 ```
 instance Eq a => Eq (Maybe a) where
 
 instance Eq a => Eq [a] where
+```
+
+#### Solution
+
+```
+instance Eq a => Eq (Maybe a) where
+  Nothing == Nothing = True
+  (Just a) == (Just b) = a == b
+  _ == _ = False 
+
+instance Eq a => Eq [a] where
+  [] == [] = True
+  x:xs == y:ys = x == y && xs == ys
+  _ == _ = False
 ```
 
 ---

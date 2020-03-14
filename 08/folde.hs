@@ -14,3 +14,7 @@ eval exp = folde (id) (+) exp
 size :: Expr -> Int
 size (Val x) = 1
 size (Add x y) = size x + size y
+
+
+instance Eq a => Eq (Maybe a) where
+  (==) Nothing Nothing = True
