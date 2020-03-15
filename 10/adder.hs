@@ -16,3 +16,11 @@ adder = do
           ints <- readIntList n []
           putStr "The total is "
           putStr (show $ sum ints)
+
+adder_seq :: IO ()
+adder_seq = do
+              putStr "How many numbers? "
+              n <- readInt
+              ints <- sequence [ readInt | i <- [1..n]]
+              putStr "The total is "
+              putStr (show $ sum ints)

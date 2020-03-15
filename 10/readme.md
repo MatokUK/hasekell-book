@@ -44,11 +44,18 @@ Hint: start by defining an auxiliary function that takes the current total and
 how manny numbers remain to be read as arguments. You will also likely need
 to use library functions `read` and `show`.
 
+
+#### Solution
+
+Defined `adder'` in **adder.hs**.
+
 ---
 
-### 05
+### 05 ☑
 Redefine `adder` using the function `sequence :: [IO a] -> IO [a]` that performs
 a list of actions and returns a list of resulting values.
+
+Defined `adder_seq'` in **adder.hs**.
 
 ---
 
